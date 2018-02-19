@@ -1,14 +1,14 @@
 {
   "name": "rhaboo",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "description": "Persistent JS Objects",
-  "main": "src/arr.js",
+  "main": "src/sand/arr.js",
   "directories": {
     "test": "tests"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adrianmay/rhaboo.git"
+    "url": "https://github.com/sirudog/rhaboo.git"
   },
   "keywords": [
     "javascript",

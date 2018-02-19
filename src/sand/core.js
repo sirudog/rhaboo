@@ -349,7 +349,7 @@ function forgetProp(that, prop) {
 
 //The main API
 //Assumes that this is persistent already, but not that val is.
-Object.defineProperty(Object.prototype, 'write', { value: function(prop, val) {
+Object.defineProperty(Object.prototype, 'WriteToStorage', { value: function(prop, val) {
   slotFor(this, prop); //Reserves a slot if not already reserved.
   if (P.typeOf(this[prop]) === 'object') //Unpersist old value
     release(this[prop]);
@@ -363,7 +363,7 @@ Object.defineProperty(Object.prototype, 'write', { value: function(prop, val) {
   return this;
 }});
 
-Object.defineProperty(Object.prototype, 'erase', { value: function(prop) {
+Object.defineProperty(Object.prototype, 'EraseFromStorage', { value: function(prop) {
   if (!this.hasOwnProperty(prop))
     return this;
   if (P.typeOf(this[prop]) === 'object') 
